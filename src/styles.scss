@@ -1,0 +1,75 @@
+/* Load in your font */
+//@import url('https://fonts.googleapis.com/css?family=Lato');
+//@import './customFont.css';
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+html {
+  font-family : 'Nunito, sans-serif';
+  //font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+   // font-family: Futura,Trebuchet MS,Arial,sans-serif !important; 
+ 
+  -webkit-font-smoothing: antialiased;
+}
+
+ 
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-size: 15px;
+  margin: 0;
+  line-height: 24px;
+}
+
+body {
+  margin: 0;
+  background-color: #efefef;
+}
+
+body, html, #app, #app > div{
+  height: 100%;
+}
+
+a {
+  color: #ff4081;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.m-b-15 {
+  margin-bottom: 15px
+}
+
+
+
+@media print
+{    
+  
+ #invoice
+ {
+   margin-top: -280px ;
+  
+  transform: scale(.7);
+}
+  #jobsheet 
+    {
+      margin-top: -70px ;
+      transform: scale(1.0);
+    }
+body
+{
+  position: static;
+}
+  button
+    {
+      
+        display: none !important;
+    }
+  #noprint
+    {
+      
+      display:none;
+      
+    }
+  }
